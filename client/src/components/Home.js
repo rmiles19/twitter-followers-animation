@@ -46,8 +46,8 @@ class Home extends Component {
       return i === 0
         ? this.state
         : {
-          x: spring(prevStyles[i - 1].x, presets.gentle),
-          y: spring(prevStyles[i - 1].y, presets.gentle),
+          x: spring(prevStyles[i - 1].x, presets.wobbly),
+          y: spring(prevStyles[i - 1].y, presets.wobbly),
         }
     })
     return endValue
